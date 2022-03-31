@@ -33,12 +33,19 @@ public class PontuacaoExamePO1 {
         int de2 = r.nextInt((6-1)+1)+1;
         int de3 = r.nextInt((6-1)+1)+1;
         
-        System.out.println("   Dé 1: " + de1);
-        System.out.println("\n Dé 2: " + de2);
-        System.out.println("\n Dé 3: " + de3);
-        //imprime sequência de 10 números inteiros aleatórios
-        for (int i = 0; i < 10; i++) {
-            System.out.println(r.nextInt());
+        System.out.println("Dé 1: " + de1);
+        System.out.println("Dé 2: " + de2);
+        System.out.println("Dé 3: " + de3);
+        
+        int pointage = de1+de2+de3;
+        System.out.println("\nPointage: " +pointage);
+        
+        if(de1==de2 && de2==de3){
+            pointage += 10;
+            System.out.println("Novo Pointage: " +pointage);
+        }else if(de1==de2 || de2==de3 || de1==de3){
+            pointage += 5;
+            System.out.println("Novo Pointage: " +pointage);
         }
     }
     
