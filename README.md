@@ -13,3 +13,6 @@ e análise estatística, apenas para citar alguns exemplos.
 Precisa se gerar um número aleatório entre 1 e 6 
 Se simplesmente se usar o método nextInt(6), se obterá números entre 0 e 5. 
 Resolver a situação aplicando o seguinte recurso: int num = gerador.nextInt(6) + 1.
+
+# Sobre nós
+Kundiama, Tecnologia e Inovação
